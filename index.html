@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,93 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script defer src="js/lazy-load.js"></script>
     <script defer src="js/tracking-user.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.1.0/fingerprint2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ua-parser-js@0/dist/ua-parser.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168607513-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-168607513-1');
+    </script>
+
 </head>
+
 <body>
-    
+    <!--  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3">
+                <img data-src="img/image-1.jpg" class="image" alt="1">
+            </div>
+            <div class="col-xl-3">
+                <ul>
+                    <h3>Datos Personales</h3>
+                    <li>Nombre</li>
+                    <li>Edad</li>
+                    <li>Mail</li>
+                    <li>Teléfono</li>
+                </ul>
+            </div>
+            <div class="col-xl-3">
+                <ul>
+                    <h3>Conocimientos</h3>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>Angular</li>
+                </ul>
+            </div>
+            <div class="col-xl-3">
+                <ul>
+                    <h3>Hobbies</h3>
+                    <li>Cantar</li>
+                    <li>Comer</li>
+                    <li>Guitarra</li>
+                    <li>Cocinar</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-12">
+                <p>Praesent in mauris eu tortor porttitor accumsan. Mauris suscipit, ligula sit amet pharetra semper,
+                    nibh ante cursus purus, vel sagittis velit mauris vel metus. Aenean fermentum risus id tortor.
+                    Integer imperdiet lectus quis justo. Integer tempor. Vivamus ac urna vel leo pretium faucibus.
+                    Mauris elementum mauris vitae tortor. In dapibus augue non sapien. Aliquam ante. Curabitur bibendum
+                    justo non orci. Praesent in mauris eu tortor porttitor accumsan. Mauris suscipit, ligula sit amet
+                    pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Aenean fermentum risus
+                    id tortor. Integer imperdiet lectus quis justo. Integer tempor. Vivamus ac urna vel.</p>
+
+            </div>
+            <div class="col-xl-12">
+                <iframe src="https://www.youtube.com/embed/B-xexrR-tEo" frameborder="0" allowfullscreen></iframe>
+                </iframe>
+            </div>
+        </div>
+
+        <!-- IMAGENES -->
+        <div class="row">
+            <div class="col-xl-3">
+                <img data-src="img/image-1.jpg" class="image" alt="1">
+            </div>
+            <div class="col-xl-3">
+                <img data-src="img/image-2.jpg" class="image" alt="2">
+            </div>
+            <div class="col-xl-3">
+                <img data-src="img/image-1.jpg" class="image" alt="1">
+            </div>
+            <div class="col-xl-3">
+                <img data-src="img/image-2.jpg" class="image" alt="2">
+            </div>
+        </div>
+
+    </div>
 </body>
+
 </html>

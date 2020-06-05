@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-    <link rel="icon" type="image/x-icon" href="img/logo.jpg">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Lazy load</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script defer src="js/javascript.js"></script>
     <script defer src="js/lazy-load.js"></script>
-    <script defer src="js/tracking-user.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.1.0/fingerprint2.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ua-parser-js@0/dist/ua-parser.min.js"></script>
@@ -28,12 +27,12 @@
 
 <body>
     <!--  -->
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-3">
+    <div class="container p-4">
+        <div class="row pb-3">
+            <div class="col-xl-3 col-md-6 pb-3">
                 <img data-src="img/image-1.jpg" class="image" alt="1">
             </div>
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-md-6">
                 <ul>
                     <h3>Datos Personales</h3>
                     <li>Nombre</li>
@@ -42,7 +41,7 @@
                     <li>Teléfono</li>
                 </ul>
             </div>
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-md-6">
                 <ul>
                     <h3>Conocimientos</h3>
                     <li>HTML</li>
@@ -51,7 +50,7 @@
                     <li>Angular</li>
                 </ul>
             </div>
-            <div class="col-xl-3">
+            <div class="col-xl-3 col-md-6">
                 <ul>
                     <h3>Hobbies</h3>
                     <li>Cantar</li>
@@ -62,8 +61,8 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-xl-12">
+        <div class="row pb-3">
+            <div class="col-xl-12 d-none d-sm-block">
                 <p>Praesent in mauris eu tortor porttitor accumsan. Mauris suscipit, ligula sit amet pharetra semper,
                     nibh ante cursus purus, vel sagittis velit mauris vel metus. Aenean fermentum risus id tortor.
                     Integer imperdiet lectus quis justo. Integer tempor. Vivamus ac urna vel leo pretium faucibus.
@@ -73,28 +72,31 @@
                     id tortor. Integer imperdiet lectus quis justo. Integer tempor. Vivamus ac urna vel.</p>
 
             </div>
+        </div>
+
+        <div class="row pb-3">
             <div class="col-xl-12">
-                <iframe src="https://www.youtube.com/embed/B-xexrR-tEo" frameborder="0" allowfullscreen></iframe>
-                </iframe>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" frameborder="0" src="https://www.youtube.com/embed/B-xexrR-tEo" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
 
         <!-- IMAGENES -->
-        <div class="row">
-            <div class="col-xl-3">
+        <div class="row pb-3">
+            <div class="col-md-6 col-xl-3 pt-4">
                 <img data-src="img/image-1.jpg" class="image" alt="1">
             </div>
-            <div class="col-xl-3">
+            <div class="col-md-6 col-xl-3 pt-4">
                 <img data-src="img/image-2.jpg" class="image" alt="2">
             </div>
-            <div class="col-xl-3">
+            <div class="col-md-6 col-xl-3 pt-4">
                 <img data-src="img/image-1.jpg" class="image" alt="1">
             </div>
-            <div class="col-xl-3">
+            <div class="col-md-6 col-xl-3 pt-4">
                 <img data-src="img/image-2.jpg" class="image" alt="2">
             </div>
         </div>
-
     </div>
 </body>
 

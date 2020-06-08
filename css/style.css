@@ -18,6 +18,7 @@ h3{
 img {
 	width: 100%;
 	transform: all 200ms;
+	min-width: 200px;
 }
 img:hover{
 	transform: scale(1.1,1.1);

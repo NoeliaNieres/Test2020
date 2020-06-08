@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -20,11 +20,11 @@
 </head>
 
 <body>
-    <!--  -->
     <div class="container p-4">
+         <!-- TABLAS -->
         <div class="row pb-3">
             <div class="col-xl-3 col-md-6 pb-3">
-                <img data-src="img/image-1.jpg" class="image" alt="1">
+                <img data-src="img/image-1.jpg" id="photo" class="image" alt="1">
             </div>
             <div class="col-xl-3 col-md-6">
                 <ul>
@@ -54,10 +54,10 @@
                 </ul>
             </div>
         </div>
-
+        <!-- DESCRIPCION -->
         <div class="row pb-3">
             <div class="col-xl-12 d-none d-sm-block">
-                <p>Praesent in mauris eu tortor porttitor accumsan. Mauris suscipit, ligula sit amet pharetra semper,
+                <p id="subtitulos">Praesent in mauris eu tortor porttitor accumsan. Mauris suscipit, ligula sit amet pharetra semper,
                     nibh ante cursus purus, vel sagittis velit mauris vel metus. Aenean fermentum risus id tortor.
                     Integer imperdiet lectus quis justo. Integer tempor. Vivamus ac urna vel leo pretium faucibus.
                     Mauris elementum mauris vitae tortor. In dapibus augue non sapien. Aliquam ante. Curabitur bibendum
@@ -67,29 +67,31 @@
 
             </div>
         </div>
-
+        <!-- VIDEO -->
         <div class="row pb-3">
             <div class="col-xl-12">
                 <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" frameborder="0" src="https://www.youtube.com/embed/B-xexrR-tEo" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item" frameborder="0" onclick="play()"
+                        src="https://www.youtube.com/embed/B-xexrR-tEo" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
 
         <!-- IMAGENES -->
-        <div class="row pb-3">
+        <div id="outer" class="row pb-3">
             <div class="col-md-6 col-xl-3 pt-4">
-                <img data-src="img/image-1.jpg" class="image" alt="1">
+                <img id="imagen1" data-src="img/image-1.jpg" class="image" alt="1">
+            </div>
+            <div  class="col-md-6 col-xl-3 pt-4">
+                <img id="imagen2" data-src="img/image-2.jpg" class="image" alt="2">
             </div>
             <div class="col-md-6 col-xl-3 pt-4">
-                <img data-src="img/image-2.jpg" class="image" alt="2">
+                <img id="imagen3" data-src="img/image-1.jpg" class="image" alt="1">
             </div>
             <div class="col-md-6 col-xl-3 pt-4">
-                <img data-src="img/image-1.jpg" class="image" alt="1">
+                <img id="imagen4" data-src="img/image-2.jpg" class="image" alt="2">
             </div>
-            <div class="col-md-6 col-xl-3 pt-4">
-                <img data-src="img/image-2.jpg" class="image" alt="2">
-            </div>
+            <span class="fix"></span>
         </div>
     </div>
 </body>

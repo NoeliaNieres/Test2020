@@ -1,0 +1,64 @@
+body {
+    font-family:'Segoe UI';
+}
+.container{	
+	background-color:#fff;
+}
+.image {
+    width: 100%;
+}
+h3{ 
+	white-space: nowrap; 
+	color: #59bae5;
+}
+.row ul li {
+	list-style:none;
+}
+
+img {
+	width: 100%;
+	transform: all 200ms;
+}
+img:hover{
+	transform: scale(1.1,1.1);
+}
+#subtitulos{
+	color:#4d4c4a;
+}
+
+/**/
+
+@media (max-width: 1024px) {
+	#photo{
+		width: 75%;
+	}
+	#outer {
+		text-align: justify;
+	}
+	#outer img {
+		display: inline-block;
+		vertical-align: center;
+	}
+	#outer .fix {
+		width: 100%;
+		height: 0;
+		display: inline-block;
+	}
+	.row ul {
+		padding-inline-start: 0px !important;
+	}
+	
+}
+@media (max-width: 320px){
+	#photo{
+		width: 100%;
+	}
+	.embed-responsive{
+		position: initial !important;
+	}
+	.row ul {
+		padding-inline-start: 0px !important;
+		border-bottom: 2px solid black;
+		padding-bottom: 10px;
+	}
+}

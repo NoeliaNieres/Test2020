@@ -4,7 +4,7 @@
 > ### Examen de HTML, CSS Y JAVASCRIPT.
 
 <p>
-  <img src="gif/video.gif" alt="Video" width="300">
+  <img src="gif/video.gif" alt="Video" width="800">
 </p>
 
 El repositorio debe contener el un archivo Readme explicando la implementación realizada y las observaciones que el postulante considere de utilidad sobre la decisiones que tomó para realizar las implementaciones.

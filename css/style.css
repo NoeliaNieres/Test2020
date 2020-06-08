@@ -1,15 +1,19 @@
 body {
-    font-family:'Segoe UI';
+	font-family:'Segoe UI';
+	background-color:#414141;
 }
 .container{	
-	background-color:#fff;
+	background-color:#ffffff;
 }
-.image {
-    width: 100%;
+#photo{
+	width: 60%;
+	max-width: 300px;
+	max-height: 154px;
 }
 h3{ 
 	white-space: nowrap; 
 	color: #59bae5;
+	margin-bottom: 25px;
 }
 .row ul li {
 	list-style:none;
@@ -19,19 +23,27 @@ img {
 	width: 100%;
 	transform: all 200ms;
 	min-width: 200px;
+	padding: 0;
 }
 img:hover{
 	transform: scale(1.1,1.1);
 }
-#subtitulos{
+#descripcion{
 	color:#4d4c4a;
+}
+.row ul {
+	padding-inline-start: 0px !important;
 }
 
 /**/
 
 @media (max-width: 1024px) {
+	.container {
+		max-width: 720px;
+	}
 	#photo{
-		width: 75%;
+		width: 70%;
+		height: 154px;
 	}
 	#outer {
 		text-align: justify;
@@ -45,12 +57,9 @@ img:hover{
 		height: 0;
 		display: inline-block;
 	}
-	.row ul {
-		padding-inline-start: 0px !important;
-	}
-	
+
 }
-@media (max-width: 320px){
+@media (max-width: 320px) {
 	#photo{
 		width: 100%;
 	}
@@ -58,8 +67,11 @@ img:hover{
 		position: initial !important;
 	}
 	.row ul {
-		padding-inline-start: 0px !important;
 		border-bottom: 2px solid black;
-		padding-bottom: 10px;
+		padding-bottom: 15px;
+	}
+	#tabla div:nth-child(4) ul{
+		border: none;
+		padding: 0px;
 	}
 }

@@ -1,30 +1,36 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lazy load</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <script defer src="js/javascript.js"></script>
+    <title>Examen Frontend</title>
+    <script defer src="js/tracking-user.js"></script>
     <script defer src="js/lazy-load.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/2.1.0/fingerprint2.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ua-parser-js@0/dist/ua-parser.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168607513-1"></script>
     <script type="text/javascript" src="js/googleanalytics.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
     <div class="container p-4">
-         <!-- TABLAS -->
-        <div class="row pb-3">
+         <!-- TABLA -->
+        <div id="tabla" class="row pb-3">
             <div class="col-xl-3 col-md-6 pb-3">
-                <img data-src="img/image-1.jpg" id="photo" class="image" alt="1">
+                <img data-src="img/perfil.jpg" id="photo" class="image img-responsive" alt="1">
             </div>
             <div class="col-xl-3 col-md-6">
                 <ul>
@@ -57,7 +63,7 @@
         <!-- DESCRIPCION -->
         <div class="row pb-3">
             <div class="col-xl-12 d-none d-sm-block">
-                <p id="subtitulos">Praesent in mauris eu tortor porttitor accumsan. Mauris suscipit, ligula sit amet pharetra semper,
+                <p id="descripcion">Praesent in mauris eu tortor porttitor accumsan. Mauris suscipit, ligula sit amet pharetra semper,
                     nibh ante cursus purus, vel sagittis velit mauris vel metus. Aenean fermentum risus id tortor.
                     Integer imperdiet lectus quis justo. Integer tempor. Vivamus ac urna vel leo pretium faucibus.
                     Mauris elementum mauris vitae tortor. In dapibus augue non sapien. Aliquam ante. Curabitur bibendum
@@ -71,7 +77,7 @@
         <div class="row pb-3">
             <div class="col-xl-12">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" frameborder="0" onclick="play()"
+                    <iframe class="embed-responsive-item" frameborder="0"
                         src="https://www.youtube.com/embed/B-xexrR-tEo" allowfullscreen></iframe>
                 </div>
             </div>
@@ -80,16 +86,16 @@
         <!-- IMAGENES -->
         <div id="outer" class="row pb-3">
             <div class="col-md-6 col-xl-3 pt-4">
-                <img id="imagen1" data-src="img/img2.jpeg" class="image" alt="1">
+                <img id="imagen1" data-src="img/img2.jpeg" class="image img-responsive" alt="1">
             </div>
             <div  class="col-md-6 col-xl-3 pt-4">
-                <img id="imagen2" data-src="img/img1.jpg" class="image" alt="2">
+                <img id="imagen2" data-src="img/img1.jpg" class="image img-responsive" alt="2">
             </div>
             <div class="col-md-6 col-xl-3 pt-4">
-                <img id="imagen3" data-src="img/img3.jpg" class="image" alt="1">
+                <img id="imagen3" data-src="img/img3.jpg" class="image img-responsive" alt="1">
             </div>
             <div class="col-md-6 col-xl-3 pt-4">
-                <img id="imagen4" data-src="img/img4.jpg" class="image" alt="2">
+                <img id="imagen4" data-src="img/img4.jpg" class="image img-responsive" alt="2">
             </div>
             <span class="fix"></span>
         </div>

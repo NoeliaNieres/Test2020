@@ -1,5 +1,5 @@
 
-# ![Examen](logo.jpg)
+# ![Examen](logo.png)
 
 > ### Examen de HTML, CSS Y JAVASCRIPT.
 
